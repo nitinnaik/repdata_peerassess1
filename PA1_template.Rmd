@@ -125,16 +125,16 @@ if (medianStepsTotal == medianNewStepsTotal) {
 
 4d. What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
-. Shape of the histogram has remained same.
+* Shape of the histogram has remained same.
 
-. The frequency counts increased as expected.
+* The frequency counts increased as expected.
 
 
 ### Are there differences in activity patterns between weekdays and weekends?
 
 1. Create a new factor variable in the dataset with two levels - "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
 
-. Using dataset with imputed missing values
+* Using dataset with imputed missing values
 
 ```{r}
 day <- weekdays(as.Date(newActivity$date))

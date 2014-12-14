@@ -158,15 +158,19 @@ cat(&quot;Mean steps :&quot;, meanNewStepsTotal)</code></pre>
 <pre><code>## median before and after replacing NAs is not same
 ## Median before 10765.00. Median after 10766.19</code></pre>
 <p>4d. What is the impact of imputing missing data on the estimates of the total daily number of steps?</p>
-<p>. Shape of the histogram has remained same.</p>
-<p>. The frequency counts increased as expected.</p>
+<ul>
+<li><p>Shape of the histogram has remained same.</p></li>
+<li><p>The frequency counts increased as expected.</p></li>
+</ul>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level3">
 <h3>Are there differences in activity patterns between weekdays and weekends?</h3>
 <ol style="list-style-type: decimal">
 <li>Create a new factor variable in the dataset with two levels - “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.</li>
 </ol>
-<p>. Using dataset with imputed missing values</p>
+<ul>
+<li>Using dataset with imputed missing values</li>
+</ul>
 <pre class="r"><code>day &lt;- weekdays(as.Date(newActivity$date))
 
 dayType &lt;- vector()
